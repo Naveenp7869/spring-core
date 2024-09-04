@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.learnSpring.Collections.Emp" name="Emp">
+		<property name="name" value="Nassim" />
+		<property name="phones">
+			<list>
+				<value>47879646</value>
+				<value>89554321</value>
+				<value>68462643</value>
+			</list>
+		</property>
+
+		<property name="address">
+			<set>
+				<value>Indore</value>
+				<value>Bhopal</value>
+				<value>jaipur</value>
+			</set>
+		</property>
+
+		<property name="courses">
+			<map>
+				<entry key="java" value="2months" />
+				<entry key="python" value="3months" />
+			</map>
+
+		</property>
+		<property name="props">
+			<props>
+				<prop key="user"> root</prop>
+				<prop key="pass"> root</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>
